@@ -8,6 +8,8 @@ import Lastdiv from "./components/lastdiv";
 import Navbar from "./components/navbar";
 import ProductCard from "./components/products-card";
 import Whitediv from "./components/white-dic";
+import ProductList from "./Products/page";
+
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
       <GreenDiv />
       <Whitediv />
       <Lastdiv />
-
+<ProductList />
       <Footer />
     </div>
   );

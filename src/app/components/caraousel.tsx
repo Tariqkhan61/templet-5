@@ -4,7 +4,7 @@ import women from "@/images/shop-hero-1-product-slide-1 (1).jpg";
 export default function Carousel() {
   return (
     <div className="relative w-full h-auto">
-      <div className="block relative w-full h-[716px]">
+      <div className="block relative w-full h-[1050px]">
         <Image
           src={women}
           alt="Summer collection"
@@ -24,7 +24,7 @@ export default function Carousel() {
         <h4 className="font-Montserrat font-normal text-base sm:text-lg lg:text-xl text-center lg:text-left max-w-full lg:max-w-[500px]">
           We know how large objects will act, but things on a small scale.
         </h4>
-        <button className="px-6 py-3 sm:px-8 sm:py-4 bg-[#2DC071] text-white text-sm sm:text-base lg:text-lg rounded-md font-Montserrat hover:bg-[#25a061] transition duration-300">
+        <button className="px-6 py-3 sm:px-8 sm:py-4 bg-[#2eed87] text-white text-sm sm:text-base lg:text-lg rounded-md font-Montserrat hover:bg-[#25a061] transition duration-300">
           SHOP NOW
         </button>
       </div>

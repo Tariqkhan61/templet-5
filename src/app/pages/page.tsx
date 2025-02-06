@@ -18,10 +18,15 @@ import p5 from "@/images/product-cover-5 (24).png";
 import p6 from "@/images/product-cover-5 (26).png";
 import Bestseller from "../components/bestseller";
 import Footer from "../components/footer";
+import AddToCartButton from "../components/AddToCartButton";
+import Script from "next/script";
 
 export default function Pages() {
   return (
     <div className="relative">
+      {/* Snipcart script */}
+      <Script src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js" />
+      <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY"></div>
       <GreenHeader />
       <Navbar />
       <div className="w-full h-auto py-[24px] bg-[#FAFAFA] relative">
@@ -160,16 +165,23 @@ export default function Pages() {
 
           {/* Buttons */}
           <div className="mt-6 flex items-center gap-4">
-            <button className="px-6 py-2 bg-[#23A6F0] text-white rounded-md hover:bg-blue-600">
-              Select Options
-            </button>
+            <AddToCartButton
+              itemId="floating-phone"
+              itemName="Floating Phone"
+              itemPrice={1139.33}
+              itemUrl="/"
+              itemDescription="Met minim Mollie non desert Alamo est sit cliquey dolor do met sent."
+              itemImage={mainImage.src}
+            />
             <div className="flex items-center gap-4">
               <Image
                 src={heart}
                 alt="heart"
                 className="w-6 h-6 cursor-pointer"
               />
-              <Image src={cart} alt="cart" className="w-6 h-6 cursor-pointer" />
+              <button className="snipcart-checkout">
+                <Image src={cart} alt="cart" className="w-6 h-6 cursor-pointer" />
+              </button>
               <Image src={eye} alt="eye" className="w-6 h-6 cursor-pointer" />
             </div>
           </div>

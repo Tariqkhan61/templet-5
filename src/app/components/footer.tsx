@@ -118,7 +118,7 @@ export default function Footer() {
 
       <section className="bg-[#FAFAFA] py-4">
         <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-          <p className="text-[#727272] text-sm font-bold">
+          <p className="text-[#727272] text-sm font-extrabold">
             Crafted With Passion By M. Tariq Mahboob (GIAIC). All Rights
             Reserved.
           </p>
